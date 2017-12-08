@@ -3,16 +3,16 @@
     "tab"                                   : "Animate",
     "key"                                   : "pagebody.animate",
         "label"                             : "Page Body",
-        "type"                              : "multi_select",
+        "type"                              : "dropdown",
         "possibleValues"                    :
             {
-                "pagebody_animate.zoom"     : "Zoom",
-                "pagebody_animate.roll"     : "Roll",
-                "pagebody_animate.bounce"   : "Bounce",
-                "pagebody_animate.slideleft"     : "Slide left",
-                "pagebody_animate.slideright"  : "Slide right",
-                "pagebody_animate.slidedown"  : "Slide down",
-                "pagebody_animate.slideup"   : "Slide up"
+                "CeresZoom"     : "Zoom",
+                "CeresRoll"     : "Roll",
+                "CeresBounce"   : "Bounce",
+                "CeresSlideLeft"     : "Slide left",
+                "CeresSlideRight"  : "Slide right",
+                "CeresSlideDown"  : "Slide down",
+                "CeresSlideUp"   : "Slide up"
  
             },
         "default"                           : "none"
