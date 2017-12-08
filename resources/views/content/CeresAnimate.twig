@@ -4,22 +4,26 @@
 <link rel="stylesheet" href="{{ plugin_path("CeresAnimate") }}/css/main.css">
 <script>
 $('#page-body').addClass("hide");
+
 $(document).ready( function(){
     var p_animate = "{{ PageBodyAnimate }}";
     var h_animate = "{{ HeaderAnimate }}";
 
     if(h_animate != "none")
     {
+    var header_old_classes = $('header').attr('class');
     $('header').removeClass().addClass(h_animate+" top-bar").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                 $(this).removeClass();  
-                $(this).addClass("top-bar");
+                $(this).addClass(header_old_classes);
     });    
     }
 
     if(p_animate != "none")
     {
+    var pagebody_old_classes = $('#page-body').attr('class');
     $('#page-body').removeClass().addClass(p_animate).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                $(this).removeClass();  
+                $(this).removeClass();
+                $(this).addClass(pagebody_old_classes);  
     });
     }
 });
