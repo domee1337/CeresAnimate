@@ -5,9 +5,23 @@
 <script>
 $('#page-body').addClass("hide");
 $(document).ready( function(){
-    $('#page-body').removeClass().addClass("{{ PageBodyAnimate }}").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+    var p_animate = "{{ PageBodyAnimate }}";
+    var h_animate = "{{ HeaderAnimate }}";
+
+    if(h_animate != "none")
+    {
+    $('header').removeClass().addClass(p_animate+" top-bar").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                $(this).removeClass();  
+                $(this).addClass("top-bar");
+    });    
+    }
+
+    if(p_animate != "none")
+    {
+    $('#page-body').removeClass().addClass(p_animate).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                 $(this).removeClass();  
     });
+    }
 });
 
 </script>
