@@ -96,6 +96,8 @@
   
 .CeresSlideUp {
     animation-name: CeresSlideUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 @keyframes CeresSlideLeft {
     from {
