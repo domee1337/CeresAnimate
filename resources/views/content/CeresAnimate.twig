@@ -3,6 +3,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" href="{{ plugin_path("CeresAnimate") }}/css/main.css">
 <script>
+$('#page-body').addClass("hide");
 $(document).ready( function(){
     $('#page-body').removeClass().addClass("{{ PageBodyAnimate }}").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                 $(this).removeClass();  
