@@ -26,7 +26,7 @@ class CeresAnimateServiceProvider extends ServiceProvider
         $eventDispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
         {
             // The script is imported in the Footer.twig of Ceres
-            $container->addScriptTemplate('CeresAnimate::content.CeresAnimate');
+            $container->addStyleTemplate('CeresAnimate::content.CeresAnimate');
         });
     }
 }
