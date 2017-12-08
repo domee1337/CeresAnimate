@@ -1,0 +1,19 @@
+{
+    "tab"                                   : "Animate",
+    "key"                                   : "pagebody.animate",
+        "label"                             : "Page Body",
+        "type"                              : "multi_select",
+        "possibleValues"                    :
+            {
+                "pagebody_animate.zoom"     : "Zoom",
+                "pagebody_animate.roll"     : "Roll",
+                "pagebody_animate.bounce"   : "Bounce",
+                "pagebody_animate.slideleft"     : "Slide left",
+                "pagebody_animate.slideright"  : "Slide right",
+                "pagebody_animate.slidedown"  : "Slide down",
+                "pagebody_animate.slideup"   : "Slide up"
+ 
+            },
+        "default"                           : "none"
+        
+}

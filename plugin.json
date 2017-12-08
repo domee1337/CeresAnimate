@@ -1,0 +1,8 @@
+{
+      "name":"CeresAnimate",
+      "description":"",
+      "namespace":"CeresAnimate",
+      "author":"Dominik Jödecke",
+      "type":"template",
+      "serviceProvider":"CeresAnimate\\Providers\\CeresAnimateServiceProvider"
+}
