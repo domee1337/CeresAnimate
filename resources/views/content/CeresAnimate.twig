@@ -10,7 +10,7 @@ $(document).ready( function(){
 
     if(h_animate != "none")
     {
-    $('header').removeClass().addClass(p_animate+" top-bar").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+    $('header').removeClass().addClass(h_animate+" top-bar").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                 $(this).removeClass();  
                 $(this).addClass("top-bar");
     });    
