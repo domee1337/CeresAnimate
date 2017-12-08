@@ -3,6 +3,6 @@
       "description":"",
       "namespace":"CeresAnimate",
       "author":"Dominik Jödecke",
-      "type":"template",
+      "type":"theme",
       "serviceProvider":"CeresAnimate\\Providers\\CeresAnimateServiceProvider"
 }
