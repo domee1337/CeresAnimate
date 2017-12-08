@@ -1,0 +1,122 @@
+/**
+* Animations
+*/ 
+@keyframes CeresBounce {
+    from, 20%, 40%, 60%, 80%, to {
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: scale3d(.3, .3, .3);
+    }
+    20% {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+      transform: scale3d(.9, .9, .9);
+    }
+    60% {
+      opacity: 1;
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+      transform: scale3d(.97, .97, .97);
+    }
+    to {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+}
+.CeresBounce {
+    animation-name: CeresBounce;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    
+}
+@keyframes CeresRoll {
+    from {
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+}
+.CeresRoll {
+    animation-name: CeresRoll;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes CeresZoom {
+    from {
+      opacity: 0;
+      transform: scale3d(.3, .3, .3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+}
+.CeresZoom {
+    animation-name: CeresZoom;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    
+}
+@keyframes CeresSlideDown {
+    from {
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+}
+.CeresSlideDown {
+    animation-name: CeresSlideDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    
+}
+@keyframes CeresSlideLeft {
+    from {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+}
+.CeresSlideLeft {
+    animation-name: CeresSlideLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    
+} 
+@keyframes CeresSlideRight {
+    from {
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+}
+.CeresSlideRight {
+    animation-name: CeresSlideRight;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    
+}
+
+
+
+
+
+
