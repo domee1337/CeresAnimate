@@ -37,7 +37,7 @@
 @keyframes CeresRoll {
     from {
       opacity: 0;
-      transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+      transform: translate3d(-90%, 0, 0) rotate3d(0, 0, 1, -120deg);
     }
   
     to {
@@ -68,7 +68,7 @@
 }
 @keyframes CeresSlideDown {
     from {
-      transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -90%, 0);
       visibility: visible;
     }
   
@@ -85,7 +85,7 @@
 
 @keyframes CeresSlideUp {
     from {
-      transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 90%, 0);
       visibility: visible;
     }
   
@@ -101,7 +101,7 @@
 }
 @keyframes CeresSlideLeft {
     from {
-      transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-90%, 0, 0);
       visibility: visible;
     }
   
@@ -117,7 +117,7 @@
 } 
 @keyframes CeresSlideRight {
     from {
-      transform: translate3d(100%, 0, 0);
+      transform: translate3d(90%, 0, 0);
       visibility: visible;
     }
   
