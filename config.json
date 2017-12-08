@@ -12,9 +12,29 @@
                 "CeresSlideLeft"     : "Slide left",
                 "CeresSlideRight"  : "Slide right",
                 "CeresSlideDown"  : "Slide down",
-                "CeresSlideUp"   : "Slide up"
+                "CeresSlideUp"   : "Slide up",
+                "none": "none"
  
             },
         "default"                           : "none"
-    }
+    },
+    {
+        "tab"                                   : "Animate",
+        "key"                                   : "header.animate",
+            "label"                             : "Header",
+            "type"                              : "dropdown",
+            "possibleValues"                    :
+                {
+                    "CeresZoom"     : "Zoom",
+                    "CeresRoll"     : "Roll",
+                    "CeresBounce"   : "Bounce",
+                    "CeresSlideLeft"     : "Slide left",
+                    "CeresSlideRight"  : "Slide right",
+                    "CeresSlideDown"  : "Slide down",
+                    "CeresSlideUp"   : "Slide up",
+                    "none": "none"
+     
+                },
+            "default"                           : "none"
+        }
 ]
