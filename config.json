@@ -1,23 +1,5 @@
 [
-    {
-    "tab"                                   : "Animate",
-    "key"                                   : "pagebody.animate",
-        "label"                             : "Page Body",
-        "type"                              : "dropdown",
-        "possibleValues"                    :
-            {
-                "CeresZoom"     : "Zoom",
-                "CeresRoll"     : "Roll",
-                "CeresBounce"   : "Bounce",
-                "CeresSlideLeft"     : "Slide left",
-                "CeresSlideRight"  : "Slide right",
-                "CeresSlideDown"  : "Slide down",
-                "CeresSlideUp"   : "Slide up",
-                "none": "none"
- 
-            },
-        "default"                           : "none"
-    },
+    
     {
         "tab"                                   : "Animate",
         "key"                                   : "header.animate",
@@ -25,17 +7,36 @@
         "type"                                  : "dropdown",
         "possibleValues"                        :
                 {
-                    "CeresZoom"     : "Zoom",
-                    "CeresRoll"     : "Roll",
-                    "CeresBounce"   : "Bounce",
-                    "CeresSlideLeft"     : "Slide left",
-                    "CeresSlideRight"  : "Slide right",
-                    "CeresSlideDown"  : "Slide down",
-                    "CeresSlideUp"   : "Slide up",
-                    "none": "none"
+                    "CeresZoom"         : "Zoom",
+                    "CeresRoll"         : "Roll",
+                    "CeresBounce"       : "Bounce",
+                    "CeresSlideLeft"    : "Slide left",
+                    "CeresSlideRight"   : "Slide right",
+                    "CeresSlideDown"    : "Slide down",
+                    "CeresSlideUp"      : "Slide up",
+                    "none"              : "none"
      
                 },
         "default"                               : "none"
+    },
+    {
+        "tab"                                   : "Animate",
+        "key"                                   : "pagebody.animate",
+        "label"                                 : "Page Body",
+        "type"                                  : "dropdown",
+        "possibleValues"                        :
+                {
+                    "CeresZoom"         : "Zoom",
+                    "CeresRoll"         : "Roll",
+                    "CeresBounce"       : "Bounce",
+                    "CeresSlideLeft"    : "Slide left",
+                    "CeresSlideRight"   : "Slide right",
+                    "CeresSlideDown"    : "Slide down",
+                    "CeresSlideUp"      : "Slide up",
+                    "none"              : "none"
+     
+                },
+        "default"                           : "none"
     },
     {
         "tab"                                   : "Animate",
@@ -44,14 +45,14 @@
         "type"                                  : "dropdown",
         "possibleValues"                        :
                 {
-                    "CeresZoom"     : "Zoom",
-                    "CeresRoll"     : "Roll",
-                    "CeresBounce"   : "Bounce",
-                    "CeresSlideLeft"     : "Slide left",
-                    "CeresSlideRight"  : "Slide right",
-                    "CeresSlideDown"  : "Slide down",
-                    "CeresSlideUp"   : "Slide up",
-                    "none": "none"
+                    "CeresZoom"         : "Zoom",
+                    "CeresRoll"         : "Roll",
+                    "CeresBounce"       : "Bounce",
+                    "CeresSlideLeft"    : "Slide left",
+                    "CeresSlideRight"   : "Slide right",
+                    "CeresSlideDown"    : "Slide down",
+                    "CeresSlideUp"      : "Slide up",
+                    "none"              : "none"
      
                 },
         "default"                               : "none"
@@ -63,14 +64,14 @@
         "type"                                  : "dropdown",
         "possibleValues"                        :
                 {
-                    "CeresZoom"     : "Zoom",
-                    "CeresRoll"     : "Roll",
-                    "CeresBounce"   : "Bounce",
-                    "CeresSlideLeft"     : "Slide left",
-                    "CeresSlideRight"  : "Slide right",
-                    "CeresSlideDown"  : "Slide down",
-                    "CeresSlideUp"   : "Slide up",
-                    "none": "none"
+                    "CeresZoom"         : "Zoom",
+                    "CeresRoll"         : "Roll",
+                    "CeresBounce"       : "Bounce",
+                    "CeresSlideLeft"    : "Slide left",
+                    "CeresSlideRight"   : "Slide right",
+                    "CeresSlideDown"    : "Slide down",
+                    "CeresSlideUp"      : "Slide up",
+                    "none"              : "none"
      
                 },
         "default"                               : "none"
