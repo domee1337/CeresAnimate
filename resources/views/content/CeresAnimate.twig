@@ -17,10 +17,7 @@ var pagebody_selector = "{{ PageBodySelector }}";
 var footer_selector = "{{ FooterSelector }}";
 var breadcrumbs_selector = "{{ BreadcrumbsSelector }}";
 
-var header_old_classes = $(header_selector).attr('class');
-var pagebody_old_classes = $(pagebody_selector).attr('class');
-var footer_old_classes = $(footer_selector).attr('class');
-var breadcrumbs_old_classes = $(breadcrumbs_selector).attr('class');
+
 
 var p_animate = "{{ PageBodyAnimate }}";
 var h_animate = "{{ HeaderAnimate }}";
@@ -33,7 +30,10 @@ if(f_animate != "none")$(footer_selector).addClass("hide");
 if(b_animate != "none")$(breadcrumbs_selector).addClass("hide");
 
 $(document).ready( function(){
-    
+    var header_old_classes = $(header_selector).attr('class');
+    var pagebody_old_classes = $(pagebody_selector).attr('class');
+    var footer_old_classes = $(footer_selector).attr('class');
+    var breadcrumbs_old_classes = $(breadcrumbs_selector).attr('class');
 
     if(h_animate != "none" && h_animate != "")
     {
