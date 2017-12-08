@@ -3,6 +3,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" href="{{ plugin_path("CeresAnimate") }}/css/main.css">
 <script>
+var header_old_classes = $('header').attr('class');
+var pagebody_old_classes = $('#page-body').attr('class');
 $('#page-body').addClass("hide");
 
 $(document).ready( function(){
@@ -11,7 +13,7 @@ $(document).ready( function(){
 
     if(h_animate != "none")
     {
-    var header_old_classes = $('header').attr('class');
+    
     $('header').removeClass().addClass(h_animate+" top-bar").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                 $(this).removeClass();  
                 $(this).addClass(header_old_classes);
@@ -20,7 +22,7 @@ $(document).ready( function(){
 
     if(p_animate != "none")
     {
-    var pagebody_old_classes = $('#page-body').attr('class');
+    
     $('#page-body').removeClass().addClass(p_animate).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                 $(this).removeClass();
                 $(this).addClass(pagebody_old_classes);  
