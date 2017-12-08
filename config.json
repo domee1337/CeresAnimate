@@ -57,6 +57,25 @@
         "default"                               : "none"
     },
     {
+        "tab"                                   : "Animate",
+        "key"                                   : "breadcrumbs.animate",
+        "label"                                 : "Breadcrumbs",
+        "type"                                  : "dropdown",
+        "possibleValues"                        :
+                {
+                    "CeresZoom"     : "Zoom",
+                    "CeresRoll"     : "Roll",
+                    "CeresBounce"   : "Bounce",
+                    "CeresSlideLeft"     : "Slide left",
+                    "CeresSlideRight"  : "Slide right",
+                    "CeresSlideDown"  : "Slide down",
+                    "CeresSlideUp"   : "Slide up",
+                    "none": "none"
+     
+                },
+        "default"                               : "none"
+    },
+    {
         "tab"                                   : "Selector",
         "key"                                   : "header.selector",
         "label"                                 : "Header",
@@ -76,5 +95,12 @@
         "label"                                 : "Footer",
         "type"                                  : "text",
         "default"                               : ".footer"
+    },
+    {
+        "tab"                                   : "Selector",
+        "key"                                   : "breadcrumbs.selector",
+        "label"                                 : "Breadcrumbs",
+        "type"                                  : "text",
+        "default"                               : "#twig-rendered-breadcrumbs"
     }
 ]

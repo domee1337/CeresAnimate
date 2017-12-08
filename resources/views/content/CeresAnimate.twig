@@ -1,10 +1,12 @@
 {% set HeaderAnimate = config("CeresAnimate.header.animate") %}
 {% set PageBodyAnimate = config("CeresAnimate.pagebody.animate") %}
 {% set FooterAnimate = config("CeresAnimate.footer.animate") %}
+{% set BreadcrumbsAnimate = config("CeresAnimate.breadcrumbs.animate") %}
 
 {% set HeaderSelector = config("CeresAnimate.header.selector") %}
 {% set PageBodySelector = config("CeresAnimate.pagebody.selector") %}
 {% set FooterSelector = config("CeresAnimate.footer.selector") %}
+{% set BreadcrumbsSelector = config("CeresAnimate.breadcrumbs.selector") %}
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" href="{{ plugin_path("CeresAnimate") }}/css/main.css">
@@ -13,21 +15,25 @@
 var header_selector = "{{ HeaderSelector }}";
 var pagebody_selector = "{{ PageBodySelector }}";
 var footer_selector = "{{ FooterSelector }}";
+var breadcrumbs_selector = "{{ BreadcrumbsSelector }}";
 
 var header_old_classes = $(header_selector).attr('class');
 var pagebody_old_classes = $(pagebody_selector).attr('class');
 var footer_old_classes = $(footer_selector).attr('class');
+var breadcrumbs_old_classes = $(breadcrumbs_selector).attr('class');
 
 $(header_selector).addClass("hide");
 $(pagebody_selector).addClass("hide");
 $(footer_selector).addClass("hide");
+$(breadcrumbs_selector).addClass("hide");
 
 $(document).ready( function(){
     var p_animate = "{{ PageBodyAnimate }}";
     var h_animate = "{{ HeaderAnimate }}";
     var f_animate = "{{ FooterAnimate }}";
+    var b_animate = "{{ BreadcrumbsAnimate }}";
 
-    if(h_animate != "none")
+    if(h_animate != "none" && h_animate != "")
     {
         $(header_selector).removeClass().addClass(h_animate+" "+header_old_classes).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                     $(this).removeClass();  
@@ -35,7 +41,7 @@ $(document).ready( function(){
         });    
     }
 
-    if(p_animate != "none")
+    if(p_animate != "none" && p_animate != "")
     {
         $(pagebody_selector).removeClass().addClass(p_animate+" "+pagebody_old_classes).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                     $(this).removeClass();
@@ -43,12 +49,20 @@ $(document).ready( function(){
         });
     }
 
-    if(f_animate != "none")
+    if(f_animate != "none" && f_animate != "")
     {
         $(footer_selector).removeClass().addClass(f_animate+" "+footer_old_classes).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                 $(this).removeClass();
                 $(this).addClass(footer_old_classes);  
         });    
+    }
+
+    if(b_animate != "none" && b_anmite != "")
+    {
+        $(breadcrumbs_selector).removeClass().addClass(b_animate+" "+breadcrumbs_old_classes).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                $(this).removeClass();
+                $(this).addClass(breadcrumbs_old_classes);  
+        });
     }
 });
 
