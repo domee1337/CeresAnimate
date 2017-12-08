@@ -14,6 +14,8 @@
                     "CeresSlideRight"   : "Slide right",
                     "CeresSlideDown"    : "Slide down",
                     "CeresSlideUp"      : "Slide up",
+                    "CeresFlipHorizontal": "Flip horizontal",
+                    "CeresFlipVertikal": "Flip vertically",
                     "none"              : "none"
      
                 },
@@ -33,6 +35,8 @@
                     "CeresSlideRight"   : "Slide right",
                     "CeresSlideDown"    : "Slide down",
                     "CeresSlideUp"      : "Slide up",
+                    "CeresFlipHorizontal": "Flip horizontal",
+                    "CeresFlipVertikal": "Flip vertically",
                     "none"              : "none"
      
                 },
@@ -52,6 +56,8 @@
                     "CeresSlideRight"   : "Slide right",
                     "CeresSlideDown"    : "Slide down",
                     "CeresSlideUp"      : "Slide up",
+                    "CeresFlipHorizontal": "Flip horizontal",
+                    "CeresFlipVertikal": "Flip vertically",
                     "none"              : "none"
      
                 },
@@ -71,6 +77,8 @@
                     "CeresSlideRight"   : "Slide right",
                     "CeresSlideDown"    : "Slide down",
                     "CeresSlideUp"      : "Slide up",
+                    "CeresFlipHorizontal": "Flip horizontal",
+                    "CeresFlipVertikal": "Flip vertically",
                     "none"              : "none"
      
                 },
@@ -86,7 +94,7 @@
     {
         "tab"                                   : "Selector",
         "key"                                   : "pagebody.selector",
-        "label"                                 : "Page body",
+        "label"                                 : "Page Body",
         "type"                                  : "text",
         "default"                               : "#page-body"
     },

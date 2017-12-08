@@ -132,6 +132,74 @@
     
 }
 
+@keyframes CeresFlipHorizontal {
+    from {
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+  
+    to {
+      transform: perspective(400px);
+    }
+  }
+  
+.CeresFlipHorizontal {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-name: CeresFlipHorizontal;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes CeresFlipVertikal {
+    from {
+      transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+  
+    to {
+      transform: perspective(400px);
+    }
+  }
+  
+.CeresFlipVertikal {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-name: CeresFlipVertikal;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
 .hide{
     display: none !important;
 }
