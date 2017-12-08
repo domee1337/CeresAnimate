@@ -21,9 +21,9 @@
     {
         "tab"                                   : "Animate",
         "key"                                   : "header.animate",
-            "label"                             : "Header",
-            "type"                              : "dropdown",
-            "possibleValues"                    :
+        "label"                                 : "Header",
+        "type"                                  : "dropdown",
+        "possibleValues"                        :
                 {
                     "CeresZoom"     : "Zoom",
                     "CeresRoll"     : "Roll",
@@ -35,6 +35,46 @@
                     "none": "none"
      
                 },
-            "default"                           : "none"
-        }
+        "default"                               : "none"
+    },
+    {
+        "tab"                                   : "Animate",
+        "key"                                   : "footer.animate",
+        "label"                                 : "Footer",
+        "type"                                  : "dropdown",
+        "possibleValues"                        :
+                {
+                    "CeresZoom"     : "Zoom",
+                    "CeresRoll"     : "Roll",
+                    "CeresBounce"   : "Bounce",
+                    "CeresSlideLeft"     : "Slide left",
+                    "CeresSlideRight"  : "Slide right",
+                    "CeresSlideDown"  : "Slide down",
+                    "CeresSlideUp"   : "Slide up",
+                    "none": "none"
+     
+                },
+        "default"                               : "none"
+    },
+    {
+        "tab"                                   : "Selector",
+        "key"                                   : "header.selector",
+        "label"                                 : "Header",
+        "type"                                  : "text",
+        "default"                               : "header"
+    },
+    {
+        "tab"                                   : "Selector",
+        "key"                                   : "pagebody.selector",
+        "label"                                 : "Page body",
+        "type"                                  : "text",
+        "default"                               : "#page-body"
+    },
+    {
+        "tab"                                   : "Selector",
+        "key"                                   : "footer.selector",
+        "label"                                 : "Footer",
+        "type"                                  : "text",
+        "default"                               : ".footer"
+    }
 ]

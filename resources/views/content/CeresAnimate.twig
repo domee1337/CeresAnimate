@@ -1,32 +1,54 @@
 {% set HeaderAnimate = config("CeresAnimate.header.animate") %}
 {% set PageBodyAnimate = config("CeresAnimate.pagebody.animate") %}
+{% set FooterAnimate = config("CeresAnimate.footer.animate") %}
+
+{% set HeaderSelector = config("CeresAnimate.header.selector") %}
+{% set PageBodySelector = config("CeresAnimate.pagebody.selector") %}
+{% set FooterSelector = config("CeresAnimate.footer.selector") %}
+
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" href="{{ plugin_path("CeresAnimate") }}/css/main.css">
 <script>
-var header_old_classes = $('header').attr('class');
-var pagebody_old_classes = $('#page-body').attr('class');
-$('#page-body').addClass("hide");
+
+var header_selector = "{{ HeaderSelector }}";
+var pagebody_selector = "{{ PageBodySelector }}";
+var footer_selector = "{{ FooterSelector }}";
+
+var header_old_classes = $(header_selector).attr('class');
+var pagebody_old_classes = $(pagebody_selector).attr('class');
+var footer_old_classes = $(footer_selector).attr('class');
+
+$(header_selector).addClass("hide");
+$(pagebody_selector).addClass("hide");
+$(footer_selector).addClass("hide");
 
 $(document).ready( function(){
     var p_animate = "{{ PageBodyAnimate }}";
     var h_animate = "{{ HeaderAnimate }}";
+    var f_animate = "{{ FooterAnimate }}";
 
     if(h_animate != "none")
     {
-    
-    $('header').removeClass().addClass(h_animate+" top-bar").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                $(this).removeClass();  
-                $(this).addClass(header_old_classes);
-    });    
+        $(header_selector).removeClass().addClass(h_animate+header_old_classes).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                    $(this).removeClass();  
+                    $(this).addClass(header_old_classes);
+        });    
     }
 
     if(p_animate != "none")
     {
-    
-    $('#page-body').removeClass().addClass(p_animate).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(pagebody_selector).removeClass().addClass(p_animate+pagebody_old_classes).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                    $(this).removeClass();
+                    $(this).addClass(pagebody_old_classes);  
+        });
+    }
+
+    if(f_animate != "none")
+    {
+        $(footer_selector).removeClass().addClass(p_animate+pagebody_old_classes).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                 $(this).removeClass();
                 $(this).addClass(pagebody_old_classes);  
-    });
+        });    
     }
 });
 
