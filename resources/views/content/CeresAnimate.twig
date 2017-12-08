@@ -22,16 +22,18 @@ var pagebody_old_classes = $(pagebody_selector).attr('class');
 var footer_old_classes = $(footer_selector).attr('class');
 var breadcrumbs_old_classes = $(breadcrumbs_selector).attr('class');
 
-$(header_selector).addClass("hide");
-$(pagebody_selector).addClass("hide");
-$(footer_selector).addClass("hide");
-$(breadcrumbs_selector).addClass("hide");
+var p_animate = "{{ PageBodyAnimate }}";
+var h_animate = "{{ HeaderAnimate }}";
+var f_animate = "{{ FooterAnimate }}";
+var b_animate = "{{ BreadcrumbsAnimate }}";
+
+if(h_animate != "none")$(header_selector).addClass("hide");
+if(p_amimate != "none")$(pagebody_selector).addClass("hide");
+if(f_animate != "none")$(footer_selector).addClass("hide");
+if(b_animate != "none")$(breadcrumbs_selector).addClass("hide");
 
 $(document).ready( function(){
-    var p_animate = "{{ PageBodyAnimate }}";
-    var h_animate = "{{ HeaderAnimate }}";
-    var f_animate = "{{ FooterAnimate }}";
-    var b_animate = "{{ BreadcrumbsAnimate }}";
+    
 
     if(h_animate != "none" && h_animate != "")
     {
