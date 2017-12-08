@@ -1,4 +1,5 @@
-{
+[
+    {
     "tab"                                   : "Animate",
     "key"                                   : "pagebody.animate",
         "label"                             : "Page Body",
@@ -15,5 +16,5 @@
  
             },
         "default"                           : "none"
-        
-}
+    }
+]
