@@ -27,6 +27,6 @@ class CeresAnimateServiceProvider extends ServiceProvider
         {
             // The script is imported in the Footer.twig of Ceres
             $container->addScriptTemplate('CeresAnimate::content.CeresAnimate');
-        }, self::PRIORITY);
+        });
     }
 }
