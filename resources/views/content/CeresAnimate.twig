@@ -1,3 +1,9 @@
+{% set HeaderAnimate = config("CeresAnimate.header.animate") %}
+{% set PageBodyAnimate = config("CeresAnimate.pagebody.animate") %}
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="{{ plugin_path("CeresAnimate") }}/css/main.css">
 <script>
-alert("Hello");
+$('#page_body').removeClass().addClass({{ PageBodyAnimate }}).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass();  
+ });
 </script>
