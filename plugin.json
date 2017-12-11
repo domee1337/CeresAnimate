@@ -4,5 +4,13 @@
       "namespace":"CeresAnimate",
       "author":"Dominik Jödecke",
       "type":"theme",
-      "serviceProvider":"CeresAnimate\\Providers\\CeresAnimateServiceProvider"
+      "serviceProvider":"CeresAnimate\\Providers\\CeresAnimateServiceProvider",
+      "dataProviders"         :
+      [
+          {
+              "key"           :"CeresAnimate\\Containers\\CeresAnimateContainer",
+              "name"          :"Javascript",
+              "description"   :"Change the Animation"
+          }
+      ]
 }

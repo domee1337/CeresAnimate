@@ -23,10 +23,11 @@ class CeresAnimateServiceProvider extends ServiceProvider
 	}
 	public function boot(Twig $twig, Dispatcher $eventDispatcher)
     {
+		/*
         $eventDispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
         {
             // The script is imported in the Footer.twig of Ceres
             $container->addStyleTemplate('CeresAnimate::content.CeresAnimate');
-        });
+        });*/
     }
 }
