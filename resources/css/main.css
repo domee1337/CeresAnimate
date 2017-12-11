@@ -203,7 +203,9 @@
 .hide{
     display: none !important;
 }
-
+.non-hidden{
+    display: block !important;
+}
 
 
 

@@ -10,6 +10,11 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" href="{{ plugin_path("CeresAnimate") }}/css/main.css">
+<style>
+    "{{ HeaderSelector }}"{
+        display: none;
+    }
+</style>
 <script>
 
 var header_selector = "{{ HeaderSelector }}";
@@ -19,10 +24,10 @@ var breadcrumbs_selector = "{{ BreadcrumbsSelector }}";
 
 
 
-var p_animate = "{{ PageBodyAnimate }}";
-var h_animate = "{{ HeaderAnimate }}";
-var f_animate = "{{ FooterAnimate }}";
-var b_animate = "{{ BreadcrumbsAnimate }}";
+var p_animate = "{{ PageBodyAnimate }}"+" non-hidden";
+var h_animate = "{{ HeaderAnimate }}"+" non-hidden";
+var f_animate = "{{ FooterAnimate }}"+" non-hidden";
+var b_animate = "{{ BreadcrumbsAnimate }}"+" non-hidden";
 
 
 if(h_animate != "none")$(header_selector).addClass("hide");
