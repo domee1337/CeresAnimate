@@ -47,8 +47,7 @@
 }
 .CeresRoll {
     animation-name: CeresRoll;
-    animation-duration: 1s;
-    animation-fill-mode: both;
+
 }
 @keyframes CeresZoom {
     from {
@@ -78,9 +77,6 @@
 }
 .CeresSlideDown {
     animation-name: CeresSlideDown;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    
 }
 
 @keyframes CeresSlideUp {
@@ -96,8 +92,6 @@
   
 .CeresSlideUp {
     animation-name: CeresSlideUp;
-    animation-duration: 1s;
-    animation-fill-mode: both;
 }
 @keyframes CeresSlideLeft {
     from {
@@ -110,10 +104,7 @@
     }
 }
 .CeresSlideLeft {
-    animation-name: CeresSlideLeft;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    
+    animation-name: CeresSlideLeft;   
 } 
 @keyframes CeresSlideRight {
     from {
@@ -126,10 +117,7 @@
     }
 }
 .CeresSlideRight {
-    animation-name: CeresSlideRight;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    
+    animation-name: CeresSlideRight;  
 }
 
 @keyframes CeresFlipHorizontal {
@@ -162,8 +150,6 @@
     -webkit-backface-visibility: visible !important;
     backface-visibility: visible !important;
     animation-name: CeresFlipHorizontal;
-    animation-duration: 1s;
-    animation-fill-mode: both;
 }
 
 @keyframes CeresFlipVertikal {
@@ -196,8 +182,6 @@
     -webkit-backface-visibility: visible !important;
     backface-visibility: visible !important;
     animation-name: CeresFlipVertikal;
-    animation-duration: 1s;
-    animation-fill-mode: both;
   }
 
 .hide{

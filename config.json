@@ -85,6 +85,13 @@
         "default"                               : "CeresSlideLeft"
     },
     {
+        "tab"                                   : "Animate",
+        "key"                                   : "animateduration",
+        "label"                                 : "Animation duration",
+        "type"                                  : "text",
+        "default"                               : "1"
+    },
+    {
         "tab"                                   : "Selector",
         "key"                                   : "header.selector",
         "label"                                 : "Header",

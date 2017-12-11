@@ -8,6 +8,8 @@
 {% set FooterSelector = config("CeresAnimate.footer.selector") %}
 {% set BreadcrumbsSelector = config("CeresAnimate.breadcrumbs.selector") %}
 
+{% set AnimateDuration = config("CeresAnimate.animateduration") %}
+
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" href="{{ plugin_path("CeresAnimate") }}/css/main.css">
 <style>
@@ -23,6 +25,10 @@
     {{ BreadcrumbsSelector }}{
         display: none;
     }
+    .CeresAnimate{
+        animation-duration: {{ AnimateDuration }}s;
+        animation-fill-mode: both;
+    }
 </style>
 <script>
 
@@ -31,18 +37,10 @@ var pagebody_selector = "{{ PageBodySelector }}";
 var footer_selector = "{{ FooterSelector }}";
 var breadcrumbs_selector = "{{ BreadcrumbsSelector }}";
 
-
-
-var p_animate = "{{ PageBodyAnimate }}"+" non-hidden";
-var h_animate = "{{ HeaderAnimate }}"+" non-hidden";
-var f_animate = "{{ FooterAnimate }}"+" non-hidden";
-var b_animate = "{{ BreadcrumbsAnimate }}"+" non-hidden";
-
-
-if(h_animate != "none")$(header_selector).addClass("hide");
-if(p_animate != "none")$(pagebody_selector).addClass("hide");
-if(f_animate != "none")$(footer_selector).addClass("hide");
-if(b_animate != "none")$(breadcrumbs_selector).addClass("hide");
+var p_animate = "{{ PageBodyAnimate }}"+" CeresAnimate non-hidden";
+var h_animate = "{{ HeaderAnimate }}"+" CeresAnimate non-hidden";
+var f_animate = "{{ FooterAnimate }}"+" CeresAnimate non-hidden";
+var b_animate = "{{ BreadcrumbsAnimate }}"+" CeresAnimate non-hidden";
 
 $(document).ready( function(){
     $(header_selector).removeClass('hide');
