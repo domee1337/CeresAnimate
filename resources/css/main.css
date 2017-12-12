@@ -190,7 +190,9 @@
 .non-hidden{
     display: block !important;
 }
-
+body{
+    display: none;
+}
 
 
 

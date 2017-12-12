@@ -44,19 +44,7 @@ var f_animate = "{{ FooterAnimate }}"+" CeresAnimate";
 var b_animate = "{{ BreadcrumbsAnimate }}"+" CeresAnimate";
 
 $(document).ready( function(){
-    $(header_selector).removeClass('hide');
-    var header_old_classes = $(header_selector).attr('class');
-
-    $(pagebody_selector).removeClass('hide');
-    var pagebody_old_classes = $(pagebody_selector).attr('class');
-
-    $(footer_selector).removeClass('hide');
-    var footer_old_classes = $(footer_selector).attr('class');
-
-
-    $(breadcrumbs_selector).removeClass('hide');
-    var breadcrumbs_old_classes = $(breadcrumbs_selector).attr('class');
-
+    $("body").css("display", "block !important");
     if(h_animate != "none" && h_animate != "")
     {
         $(header_selector).addClass(h_animate+" non-hidden").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -65,7 +53,7 @@ $(document).ready( function(){
     }
     else
     {
-        $(header_selector).removeClass("hide");
+        $(header_selector).addClass("non-hidden");
     }
 
     if(p_animate != "none" && p_animate != "")
@@ -76,7 +64,7 @@ $(document).ready( function(){
     }
     else
     {
-        $(pagebody_selector).removeClass("hide");
+        $(pagebody_selector).addClass("non-hidden");
     }
 
 
@@ -88,7 +76,7 @@ $(document).ready( function(){
     }
     else
     {
-        $(footer_selector).removeClass("hide");
+        $(footer_selector).addClass("non-hidden");
     }
 
 
@@ -100,7 +88,7 @@ $(document).ready( function(){
     }
     else
     {
-        $(breadcrumbs_selector).removeClass("hide");
+        $(breadcrumbs_selector).addClass("non-hidden");
     }
 
 });
