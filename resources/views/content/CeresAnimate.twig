@@ -13,6 +13,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" href="{{ plugin_path("CeresAnimate") }}/css/main.css">
 <style>
+
     {{ HeaderSelector }}{
         display: none;
     }
@@ -44,7 +45,7 @@ var f_animate = "{{ FooterAnimate }}"+" CeresAnimate";
 var b_animate = "{{ BreadcrumbsAnimate }}"+" CeresAnimate";
 
 $(document).ready( function(){
-    $("body").css("display", "block !important");
+    $("body").css("display", "block");
     if(h_animate != "none" && h_animate != "")
     {
         $(header_selector).addClass(h_animate+" non-hidden").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
