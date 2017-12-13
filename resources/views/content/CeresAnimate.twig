@@ -10,39 +10,35 @@
 
 {% set AnimateDuration = config("CeresAnimate.animateduration") %}
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<link rel="stylesheet" href="{{ plugin_path("CeresAnimate") }}/css/main.css">
 <style>
-
     {% if HeaderAnimate != "none" %}
         {{ HeaderSelector }}{
             display: none;
         }
     {% endif %}
-
     {% if PageBodyAnimate != "none" %}
         {{ PageBodySelector }}{
             dislay: none;
         }
     {% endif %}
-
     {% if FooterAnimate != "none" %}
         {{ FooterSelector }}{
             display: none;
         }
     {% endif %}
-
     {% if BreadcrumbsAnimate != "none" %}
         {{ BreadcrumbsSelector }}{
             display: none;
         }
     {% endif %}
-
     .CeresAnimate{
         animation-duration: {{ AnimateDuration }}s;
         animation-fill-mode: both;
     }
 </style>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="{{ plugin_path("CeresAnimate") }}/css/main.css">
+
 <script>
 
 var header_selector = "{{ HeaderSelector }}";
@@ -50,10 +46,10 @@ var pagebody_selector = "{{ PageBodySelector }}";
 var footer_selector = "{{ FooterSelector }}";
 var breadcrumbs_selector = "{{ BreadcrumbsSelector }}";
 
-var p_animate = "{{ PageBodyAnimate }}"+" CeresAnimate";
-var h_animate = "{{ HeaderAnimate }}"+" CeresAnimate";
-var f_animate = "{{ FooterAnimate }}"+" CeresAnimate";
-var b_animate = "{{ BreadcrumbsAnimate }}"+" CeresAnimate";
+var p_animate = "{{ PageBodyAnimate }} CeresAnimate";
+var h_animate = "{{ HeaderAnimate }} CeresAnimate";
+var f_animate = "{{ FooterAnimate }} CeresAnimate";
+var b_animate = "{{ BreadcrumbsAnimate }} CeresAnimate";
 
 $(document).ready( function(){
     $("body").css("display", "block");
