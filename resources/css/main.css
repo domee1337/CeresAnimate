@@ -29,10 +29,71 @@
     }
 }
 .CeresBounce {
-    animation-name: CeresBounce;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    
+    animation-name: CeresBounce;   
+}
+
+@keyframes CeresBounceDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.CeresBounceDown {
+  animation-name: CeresBounceDown;
+}
+
+@keyframes CeresBounceUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.CeresBounceUp {
+  animation-name: CeresBounceUp;
 }
 @keyframes CeresRoll {
     from {
@@ -60,10 +121,7 @@
     }
 }
 .CeresZoom {
-    animation-name: CeresZoom;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    
+    animation-name: CeresZoom;   
 }
 @keyframes CeresSlideDown {
     from {
@@ -184,6 +242,79 @@
     animation-name: CeresFlipVertikal;
   }
 
+@keyframes CeresFade {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+.CeresFade {
+    animation-name: CeresFade;
+  }
+
+
+@keyframes CeresFadeDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .CeresFadeDown {
+    animation-name: CeresFadeDown;
+  }
+
+@keyframes CeresFadeUp {
+  from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+  }
+  
+  to {
+      opacity: 1;
+      transform: none;
+  }
+}
+  
+.CeresFadeUp {
+  animation-name: CeresFadeUp;
+}
+
+@keyframes CeresLightSpeed {
+  from {
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.CeresLightSpeed {
+  animation-name: CeresLightSpeed;
+  animation-timing-function: ease-out;
+}
 .hide{
     display: none !important;
 }
